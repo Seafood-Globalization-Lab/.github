@@ -1,2 +1,1 @@
-# .github
-Org profile page
+![The Markdown logo](Markdown-mark.png)
