@@ -1,12 +1,3 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ## Problem/Observation
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
@@ -18,5 +9,5 @@ A clear and concise description of what the problem is. Ex. I'm always frustrate
 - screenshots
 - links to documentaton, examples, or needed documents
 
-### To-Do List
+## To-Do List
 - [ ] 
