@@ -77,8 +77,9 @@ git add .
 git commit -m "fixed <...> from rerunning devtools::check()"
 git rebase develop
 ```
-- [ ] Push rebased branch to origin - requires a force push after rebase (wont overwrite remote commits not seen yet)
+- [ ] Push rebased branch to origin - requires a force push after rebase
 ```
+# aborts if the remote has commits your local branch hasn't fetched
 git push origin <feature-branch> --force-with-lease
 ```
 - [ ] All automated checks pass (scroll down below PR to see results if this is configured)
