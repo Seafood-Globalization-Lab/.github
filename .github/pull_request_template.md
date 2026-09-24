@@ -1,4 +1,4 @@
-<!--- These lines are template instructions, you do NOT need to delete them. -->
+<!--- These lines are template instructions -->
 <!--- Go over all the following sections and checklists (put an `x` in all the boxes that apply. -->
 
 <!--- Provide a general summary of your changes in the Title above -->
@@ -16,6 +16,9 @@
 - [ ] Documentation update
 - [ ] Infrastructure / CI/CD
 - [ ] Performance improvement
+- [ ] Breaking change
+- [ ] Dependency added/updated
+- [ ] Tests only
 
 ## Contributing Checklist
 - [ ] My code follows the code style of this project
@@ -27,8 +30,8 @@
 - [ ] Updated `README`
 
 ### R software package:
-- [ ] Ran `devtools::document()` to update `docs/`
-- [ ] Ran `attachment::att_amend_desc()` to auto-sync function imports and DESCRIPTION
+- [ ] Ran `devtools::document()` to update `man/` and `NAMESPACE`
+- [ ] Ran `attachment::att_amend_desc()` to auto-sync function imports and `DESCRIPTION`
 - [ ] Updated `CHANGELOG.md` (include this PR number) 
 
 ## Testing Checklist
@@ -56,7 +59,7 @@ This git workflow outlines our "Git Flow" style of software development that use
 - [ ] All branches up-to-date (*e.g.* `main`, `develop`, `develop-<feature-name>`)
 ```
 git checkout develop
-git pull develop
+git pull
 ```
 - [ ] Switch back to `feature-branch`
 ```
@@ -74,9 +77,9 @@ git add .
 git commit -m "fixed <...> from rerunning devtools::check()"
 git rebase develop
 ```
-- [ ] Push rebased branch to origin - requires a force push after rebase
+- [ ] Push rebased branch to origin - requires a force push after rebase (wont overwrite remote commits not seen yet)
 ```
-git push origin <feature-branch> --force
+git push origin <feature-branch> --force-with-lease
 ```
 - [ ] All automated checks pass (scroll down below PR to see results if this is configured)
 - [ ] Tagged PR Reviewer to the left & message them directly about the PR review
