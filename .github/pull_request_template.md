@@ -49,7 +49,9 @@
 ### Regression Risk
 <!-- Could this fix break anything else? -->
 
-## PR Review & Prep Merge Checklist (GitFlow rebasing workflow)
+## PR Review & Prep Merge Checklist
+
+This git workflow outlines our "Git Flow" style of software development that uses rebasing to keep a clean linear history. 
 
 - [ ] All branches up-to-date (*e.g.* `main`, `develop`, `develop-<feature-name>`)
 ```
