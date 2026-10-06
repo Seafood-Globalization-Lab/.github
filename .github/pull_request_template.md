@@ -47,7 +47,8 @@
 ### R software package:
 - [ ] Ran `devtools::test()` and passed all tests
 - [ ] Ran `devtools::check()` with 0 ERRORS | 0 WARNINGS
-<!---Describe in detail any remaining `check()` WARNINGS -->
+
+Describe in detail any remaining `check()` WARNINGS:
 
 ### Regression Risk
 <!-- Could this fix break anything else? -->
@@ -77,7 +78,7 @@ git add .
 git commit -m "fixed <...> from rerunning devtools::check()"
 git rebase develop
 ```
-- [ ] Push rebased branch to origin - requires a force push after rebase
+- [ ] Push rebased branch to origin - requires a force push after rebase (if merge conflicts occur)
 ```
 # aborts if the remote has commits your local branch hasn't fetched
 git push origin <feature-branch> --force-with-lease
