@@ -31,7 +31,7 @@
 
 ### R software package:
 - [ ] Ran `devtools::document()` to update `man/` and `NAMESPACE`
-- [ ] Ran `attachment::att_amend_desc()` to auto-sync function imports and `DESCRIPTION`
+- [ ] Add new software dependencies to `DESCRIPTION` via `usethis::use_package("newPackage")`
 - [ ] Updated `CHANGELOG.md` (include this PR number) 
 
 ## Testing Checklist
